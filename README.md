@@ -1,3 +1,5 @@
-This is a repository for me and my friends.
-
-Our objective is to start peer coding around late March and review each other's code regularly. If you come across this repository and think a certain solution for a problem can be improved, please let us know! 
+| Question Number | Question Name |Topic|
+|:---------------:|:-------------:|:---:|
+| `1` | Max Consecutive Ones |Arrays|
+|`2`|Find Numbers with Even Number of Digits|Arrays|
+|3|Squares of a Sorted array|Arrays|
