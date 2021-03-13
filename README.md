@@ -17,7 +17,7 @@
 
 </center>
 
-<hr>
+
 <br>
 
 ## :man: Repository Created & Maintained By -
