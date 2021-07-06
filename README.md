@@ -8,29 +8,26 @@
 
 <p align="center">
 
-| Topic number |  Topic name  |
-| :----------: | :----------: |
-|     `1`      |    Arrays    |
-|     `2`      | Matrix |
-|     `3`      | String |
-|     `4`      | Search & sort |
-|     `5`      | Linked List  |
-|     `6`      | Binary Trees |
-|     `7`      |     BST      |
-|     `8`      |    Greedy    |
-|     `9`      | Backtracking |
-|     `10`     | Stacks & Queues |
-|     `11`     | Heap |
-|     `12`     | Graph |
-|     `13`     | Trie |
+| Topic number |     Topic name      |
+| :----------: | :-----------------: |
+|     `1`      |       Arrays        |
+|     `2`      |       Matrix        |
+|     `3`      |       String        |
+|     `4`      |    Search & sort    |
+|     `5`      |     Linked List     |
+|     `6`      |    Binary Trees     |
+|     `7`      |         BST         |
+|     `8`      |       Greedy        |
+|     `9`      |    Backtracking     |
+|     `10`     |   Stacks & Queues   |
+|     `11`     |        Heap         |
+|     `12`     |        Graph        |
+|     `13`     |        Trie         |
 |     `14`     | Dynamic Programming |
-|     `15`     | Bit Manipulation |
-|     `16`     | Math |
-
-
+|     `15`     |  Bit Manipulation   |
+|     `16`     |        Math         |
 
 </p>
-
 
 <br>
 
