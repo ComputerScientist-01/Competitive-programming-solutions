@@ -8,3 +8,4 @@
 |        6        |       Level order Traversal        |
 |        7        |   Reverse Level order traversal    |
 |        8        |         Average of levels          |
+|        9        |     Count complete tree nodes      |
