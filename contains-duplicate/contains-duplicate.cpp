@@ -2,16 +2,17 @@ class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
         
-        set <int> dup;
-        dup=set(nums.begin(),nums.end());
-        
-        if(nums.size()>dup.size())
-        {
-            return true;
+    sort(nums.begin(),nums.end());
+    bool dupli=false;
+    int idx=1;
+    for(int i=1;i<nums.size();i++)
+    {
+        if(nums[i-1]==nums[i])
+        { 
+            dupli=true;
+            idx++;
         }
-        else 
-            return false;
-        
-        
+    }
+    return dupli;       
     }
 };
