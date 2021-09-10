@@ -18,3 +18,5 @@ public:
         }
     }
 };
+// done in place by iterating from the back
+// space - O(1)
