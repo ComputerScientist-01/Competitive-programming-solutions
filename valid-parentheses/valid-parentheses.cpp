@@ -1,24 +1,39 @@
-
 class Solution {
 public:
-    bool isValid(string s) {
-    vector<char> st;
-    for (char &c: s)
+        bool isValid(string s) 
     {
-        if (c == '(')
-			st.push_back(')');
-		else if (c == '{')
-			st.push_back('}');
-		else if (c == '[')
-			st.push_back(']');
-		else 
+        stack<char> st;
+        if(s.size() % 2 != 0)
         {
-            
-            if (st.empty() || st[st.size()-1] != c)
-			return false;
-        st.pop_back();
+            return false;
         }
-    }
-    return st.empty();
+        
+        for (int i=0; i<s.length();i++)
+        {
+            if(s[i]=='{'|| s[i]=='[' || s[i]=='(')
+            {
+                st.push(s[i]);
+            }
+             else if(s[i]==')' and !st.empty() and st.top()=='(' )
+             {
+                 st.pop();
+             }
+             else if(s[i]=='}' and !st.empty() and st.top()=='{' )   
+             {
+                 st.pop();
+             }
+             else if(s[i]==']' and !st.empty() and st.top()=='[' )   
+             {
+                 st.pop();
+             }
+            else
+            {
+                return false;
+            }
+         }
+        return st.empty() ?  true : false;   
     }
 };
+
+
+
