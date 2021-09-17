@@ -1,7 +1,9 @@
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-        
+        ios_base::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
         int beg=0;
         int end=nums.size()-1;
         int mid,c;
