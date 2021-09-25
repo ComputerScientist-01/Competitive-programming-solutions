@@ -25,9 +25,6 @@ public:
         }
         head=prev;
         return head;
-        
-        
-        
-          }
+    }
 };
 
