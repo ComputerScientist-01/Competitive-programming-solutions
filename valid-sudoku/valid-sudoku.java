@@ -18,3 +18,7 @@ class Solution {
         return true;  
     }
 }
+
+// The function adds the element only if the specified element is not already present in the set 
+//else the function return False if the element is already present in the Set.
+// hence we can solve the question in one single set 
