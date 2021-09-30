@@ -11,32 +11,19 @@
  */
 class Solution {
 public:
-    
-    unordered_map <int,int> ump;
     bool findTarget(TreeNode* root, int k) {
-        inorder(root,k);
-        for(auto x: ump)
-        {
-            int t = k-x.first;
-            if(ump.find(t)!=ump.end() && x.first != t)
-            {
-                return true;
-            }
-            
-        }
-        return false;
-        
+        unordered_set <int> comp;
+        return explore(root,k,comp);
     }
     
-    void inorder(TreeNode* root, int k)
-    {
-        if(!root)
-            return ;
-        inorder(root->left,k);
+    bool explore(TreeNode* root, int k,unordered_set<int>& comp){
+        if(!root){
+            return false;
+        }
+        if(comp.find(root->val) != comp.end()) return true;
+        comp.insert(k-root->val);
         
-        ump[root->val]++;
-        
-        inorder(root->right,k);
+        return explore(root->left,k,comp) || explore(root->right,k,comp);
         
     }
     
